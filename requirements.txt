@@ -9,3 +9,4 @@ numpy
 language-tool-python
 psycopg2-binary
 whitenoise
+tensorflow
