@@ -7,3 +7,4 @@ sentencepiece
 sumy
 numpy
 language-tool-python
+psycopg2-binary
