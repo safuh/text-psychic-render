@@ -77,7 +77,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'isumm.wsgi.app'
+WSGI_APPLICATION = 'isumm.wsgi.application'
 
 
 # Database
