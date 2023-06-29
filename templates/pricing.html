@@ -1,0 +1,97 @@
+{% extends 'innerbase.html' %}
+{% load socialaccount %}
+
+{% block customlink %}
+<li><a class="getstarted scrollto" href="/guides">Guide</a></li>
+{% endblock %}
+{%block body %}
+
+<section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href="/home">Home</a></li>
+          <li>Plans</li>
+        </ol>
+        <h2>Subscribe to a plan</h2>
+
+      </div>
+</section><!-- End Breadcrumbs -->
+
+{% block content %}
+<section class="inner-page">
+      <div class="container">
+        <!-- Masthead-->
+<!--======= Pricing Section ======= -->
+    <section id="pricing" class="pricing">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Pricing</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="box">
+              <h3>Basic Plan</h3>
+              <h4><sup>$</sup>6<span>per month</span></h4>
+              <h5>Language Modeling</h5>
+              <ul>
+                <li><i class="bx bx-check"></i> AutoCompletion</li>
+                <li><i class="bx bx-check"></i> Spell Checking</li>
+                <li><i class="bx bx-check"></i> POS tagging</li>
+                <li class="na"><i class="bx bx-x"></i> <span>Lemmatization</span></li>
+                <li class="na"><i class="bx bx-x"></i> <span>Next word generation</span></li>
+              </ul>
+              <a href="/bscCheckout#pricing" class="buy-btn">Get Started</a>
+         
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="box featured">
+              <h3>Business Plan</h3>
+              <h4><sup>$</sup>15<span>per month</span></h4>
+              <h5>Text preprocessing</h5>
+              <ul>
+                <li><i class="bx bx-check"></i> Tokenization</li>
+                <li><i class="bx bx-check"></i> Word Embeddings</li>
+                <li><i class="bx bx-check"></i> AutoCompletion</li>
+                <li><i class="bx bx-check"></i> Spell Checking</li>
+                <li><i class="bx bx-check"></i> POS tagging</li>
+                <li class="na"><i class="bx bx-x"></i> <span>Lemmatization</span></li>
+                <li class="na"><i class="bx bx-x"></i> <span>Next word generation</span></li>
+              </ul>
+              <a href="/bsCheckout#pricing" class="buy-btn">Get Started</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="box">
+              <h3>Developer Plan</h3>
+              <h4><sup>$</sup>24<span>per month</span></h4>
+              <h5>Language Comprehension</h5>
+              <ul>
+                <li><i class="bx bx-check"></i> Semantic analysis</li>
+                <li><i class="bx bx-check"></i> Classification</li>
+                <li><i class="bx bx-check"></i> Language detection</li>
+                <li><i class="bx bx-check"></i> Language translation</li>
+                <li><i class="bx bx-check"></i> Tokenization</li>
+                <li><i class="bx bx-check"></i> Word Embeddings</li>
+                <li><i class="bx bx-check"></i> AutoCompletion</li>
+                <li><i class="bx bx-check"></i> Spell Checking</li>
+                <li><i class="bx bx-check"></i> POS tagging</li>                
+              </ul>
+              <a href="/devCheckout#pricing" class="buy-btn">Get Started</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    
+{% endblock %}
+{% endblock %}

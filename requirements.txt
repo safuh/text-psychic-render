@@ -1,0 +1,9 @@
+Django==4.1.3
+djangorestframework
+djangorestframework-api-key
+django-allauth
+googletrans
+sentencepiece
+sumy
+numpy
+language-tool-python

@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load socialaccount %}
+{%block body %}
+
+<section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href="/home">Home</a></li>
+          <li>Guides</li>
+        </ol>
+        <h2>Follow our intergration guide</h2>
+
+      </div>
+</section><!-- End Breadcrumbs -->
+
+{% block content %}
+<section class="inner-page">
+      <div class="container row">
+        <div class="col-sm-3">
+          <h3>Endpoints And Params</h3>
+          <div class="d-flex justify-content-center"><code>
+            /websumm?url={URL}<br>
+            /correct?text={TEXT}<br>
+            /langdetext?text={TEXT}<br>
+            /langtranslate?text={TEXT}<br>
+          </code></div>
+          <h3> Headers</h3>
+          <div class="d-flex justify-content-center"><code>
+            AUTHORIZATION : Api-Key {YOUR API KEY}
+          </code></div>
+        </div>
+        <div class="col-sm-9">
+          <div class="col-sm-9"><h3>cUrl</h3>
+          <div class="d-flex bg-dark text-white justify-content-center"><code>curl <br>
+            -H AUTHORIZATION: Api-Key {YOUR API KEY}<br>
+          host/endpoint?queryparam=queryvalue</code></div>
+        </div>
+        <div class="col-sm-9">
+          <h3>Javascript</h3>
+          <div class="d-flex bg-dark justify-content-center"><code> var query_val='https://wikipedia.com/data';<br>
+          async fetch(`/websumm?url=${query_val}`, {<br>
+            method :'GET',<br>
+            headers: {'AUTHORIZATION ': `Api-key ${query_val}`<br>
+          }).then(function(response){<br>
+          details =response.json();<br>
+        });<br>
+}</code></div></div>
+        </div>
+      </div>
+        <!-- Masthead-->
+    
+{% endblock %}
+{% endblock %}
