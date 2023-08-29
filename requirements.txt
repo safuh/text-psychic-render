@@ -11,3 +11,4 @@ psycopg2-binary
 whitenoise
 tensorflow
 gunicorn
+dj-database-url
