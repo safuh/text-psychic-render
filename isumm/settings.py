@@ -86,14 +86,16 @@ WSGI_APPLICATION = 'isumm.wsgi.application'
 # environments like Vercel. You can use a database over HTTP, hosted elsewhere.
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'railway',
-        'USER':'postgres',
-        'PASSWORD':'LCC2d89AepkmHZlWHtz7',
-        'HOST':'containers-us-west-194.railway.app',
-        'PORT':7435
-    }
+    'default': dj_database_url.config(
+        default='postgres://fire_scrapy_user:F8IVdXdERvneCCsARHp5KzagOLQMwLkg@dpg-cjjtu65k5scs738nat9g-a.oregon-postgres.render.com/fire_scrapy',
+        conn_max_age=600
+        )
+        #'ENGINE': 'django.db.backends.postgresql',
+        #'NAME': 'fire_scrapy',
+        #'USER':'fire_scrapy_user',
+        #'PASSWORD':'F8IVdXdERvneCCsARHp5KzagOLQMwLkg',
+        #'HOST':'dpg-cjjtu65k5scs738nat9g-a.oregon-postgres.render.com',
+        #'PORT':5432
 }
 
 
