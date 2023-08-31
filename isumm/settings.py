@@ -24,8 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', default='your secret key')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'RENDER' not in os.environ
-ALLOWED_HOSTS = []
+#DEBUG = 'RENDER' not in os.environ
+DEBUG=True
+ALLOWED_HOSTS = ['*']
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
 if RENDER_EXTERNAL_HOSTNAME:
     ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
@@ -43,10 +44,6 @@ INSTALLED_APPS = [
     'tpsychicapp',
     'rest_framework',
     "rest_framework_api_key",
-    'allauth',
-    'allauth.account',
-    'allauth.socialaccount',
-    'allauth.socialaccount.providers.google',
 ]
 
 MIDDLEWARE = [
@@ -149,24 +146,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
-    'allauth.account.auth_backends.AuthenticationBackend'
 ]
-SOCIALACCOUNT_PROVIDERS = {
-    'google': {
-        'SCOPE': [
-            'profile',
-            'email',
-        ],
-        'AUTH_PARAMS': {
-            'access_type': 'online',
-        }
-    }
-}
-SOCIALACCOUNT_EMAIL_REQUIRED =(True)
 SITE_ID = 2
-
-LOGIN_REDIRECT_URL = '/'
-LOGOUT_REDIRECT_URL = '/'
 
 PAYPAL_CLIENT_ID='AWmyihi1ip94nQebSLHuF1f8Lw18KL8-HLQX32NgICo4ZFQepQwIN195664eoEUWACxjtMy5C8Jq2G9W'
 PAYPAL_SECRET='EAOQzJCPIWcT5uiBiyWSluRjC-ymxrVnVEO9W3LK-eTxYkqxpiUhgCS7TzrGIYYPTiLSWVKKIwiAQv3o'
