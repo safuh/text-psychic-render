@@ -122,7 +122,7 @@ SOCIALACCOUNT_PROVIDERS = {
             'email',
         ],
         'APP': {
-            'client_id': '394901993762-b78v2ebsod57eld99as74mtoau37q3qn.apps.googleusercontent.com'
+            'client_id': '394901993762-b78v2ebsod57eld99as74mtoau37q3qn.apps.googleusercontent.com',
             'secret': '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'
         },
         'AUTH_PARAMS': {
